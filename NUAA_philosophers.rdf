@@ -1,0 +1,1836 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Ontoterminology: Ancient-Greek-and-Chinese-Philosophers -->
+<!-- Author: Rafail Giannadakis -->
+<!-- Creation date: June 26, 2024 -->
+<!-- Export date: June 29, 2024 time: 6:28:48 PM -->
+<!-- TEDI version: 3.7 -->
+<!-- http://ontoterminology.com/tedi -->
+<rdf:RDF xmlns="http://www.ontologia.fr/OTB/NUAA_philosophers#"
+    xml:base="http://www.ontologia.fr/OTB/NUAA_philosophers"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:xml="http://www.w3.org/XML/1998/namespace"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:otv="http://www.ontologia.fr/OTB/otv#"
+    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+    xmlns:vann="http://purl.org/vocab/vann/"
+    xmlns:ontolex="http://www.w3.org/ns/lemon/ontolex#">
+
+	<!-- 
+	//////////////////////////////////////////////////////////
+	//
+	// SKOS
+	//
+	//////////////////////////////////////////////////////////
+	-->
+
+	<!--  SKOS Concept Scheme -->
+
+    <skos:ConceptScheme rdf:about="http://www.ontologia.fr/OTB/NUAA_philosophers">
+        <dc:title>Ancient-Greek-and-Chinese-Philosophers</dc:title>
+        <dc:description>The current ontoterminology entitled "Ancient Greek and Chinese Philosophers" was developed in the context of the NUAA training for knowledge modelling instructed by Dr. Maria Papadopoulou and Rafail Giannadakis and focuses on modelling Ancient Greek and Chinese philosophers, their works and their chronological and spatial distribution.</dc:description>
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-6-26</dc:issued>
+        <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-6-29</dc:modified>
+        <dc:creator>Rafail Giannadakis</dc:creator>
+        <dc:publisher>University of Crete - TALOS</dc:publisher>
+    </skos:ConceptScheme>
+
+	<!--  SKOS Concepts -->
+
+    <skos:Concept rdf:about="#Ancient_Greek_Philosopher">
+        <skos:inScheme rdf:resource="http://www.ontologia.fr/OTB/NUAA_philosophers"/>
+        <rdfs:label xml:lang="en">ancient greek philosopher</rdfs:label>
+        <skos:prefLabel xml:lang="en">ancient greek philosopher</skos:prefLabel>
+        <rdfs:label xml:lang="zh">古希腊哲学家</rdfs:label>
+        <skos:prefLabel xml:lang="zh">古希腊哲学家</skos:prefLabel>
+        <skos:broader rdf:resource="#Philosopher"/>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="#Ancient_Chinese_Philosopher">
+        <skos:inScheme rdf:resource="http://www.ontologia.fr/OTB/NUAA_philosophers"/>
+        <rdfs:label xml:lang="en">ancient chinese philosopher</rdfs:label>
+        <skos:prefLabel xml:lang="en">ancient chinese philosopher</skos:prefLabel>
+        <rdfs:label xml:lang="zh">中国古代哲学家</rdfs:label>
+        <skos:prefLabel xml:lang="zh">中国古代哲学家</skos:prefLabel>
+        <skos:broader rdf:resource="#Philosopher"/>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="#Ancient_Greek_Location">
+        <skos:inScheme rdf:resource="http://www.ontologia.fr/OTB/NUAA_philosophers"/>
+        <rdfs:label xml:lang="en">ancient greek location</rdfs:label>
+        <skos:prefLabel xml:lang="en">ancient greek location</skos:prefLabel>
+        <rdfs:label xml:lang="zh">古希腊地点</rdfs:label>
+        <skos:prefLabel xml:lang="zh">古希腊地点</skos:prefLabel>
+        <skos:broader rdf:resource="#Location"/>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="#Ancient_Chinese_Location">
+        <skos:inScheme rdf:resource="http://www.ontologia.fr/OTB/NUAA_philosophers"/>
+        <rdfs:label xml:lang="en">ancient chinese location</rdfs:label>
+        <skos:prefLabel xml:lang="en">ancient chinese location</skos:prefLabel>
+        <rdfs:label xml:lang="zh">古代中国地点</rdfs:label>
+        <skos:prefLabel xml:lang="zh">古代中国地点</skos:prefLabel>
+        <skos:broader rdf:resource="#Location"/>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="#Ancient_Chinese_Philosophical_Work">
+        <skos:inScheme rdf:resource="http://www.ontologia.fr/OTB/NUAA_philosophers"/>
+        <rdfs:label xml:lang="en">ancient chinese philosophical work</rdfs:label>
+        <skos:prefLabel xml:lang="en">ancient chinese philosophical work</skos:prefLabel>
+        <rdfs:label xml:lang="zh">中国古代哲学著作</rdfs:label>
+        <skos:prefLabel xml:lang="zh">中国古代哲学著作</skos:prefLabel>
+        <skos:broader rdf:resource="#Philosophical_Work"/>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="#Philosopher">
+        <skos:inScheme rdf:resource="http://www.ontologia.fr/OTB/NUAA_philosophers"/>
+        <skos:topConceptOf rdf:resource="http://www.ontologia.fr/OTB/NUAA_philosophers"/>
+        <rdfs:label xml:lang="en">philosopher</rdfs:label>
+        <skos:prefLabel xml:lang="en">philosopher</skos:prefLabel>
+        <rdfs:label xml:lang="zh">哲学家</rdfs:label>
+        <skos:prefLabel xml:lang="zh">哲学家</skos:prefLabel>
+        <skos:narrower rdf:resource="#Ancient_Greek_Philosopher"/>
+        <skos:narrower rdf:resource="#Ancient_Chinese_Philosopher"/>
+        <skos:related rdf:resource="#Philosopher"/>
+        <skos:related rdf:resource="#Location"/>
+        <skos:related rdf:resource="#Location"/>
+        <skos:related rdf:resource="#Philosopher"/>
+        <skos:related rdf:resource="#Philosophical_Work"/>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="#Location">
+        <skos:inScheme rdf:resource="http://www.ontologia.fr/OTB/NUAA_philosophers"/>
+        <skos:topConceptOf rdf:resource="http://www.ontologia.fr/OTB/NUAA_philosophers"/>
+        <rdfs:label xml:lang="en">location</rdfs:label>
+        <skos:prefLabel xml:lang="en">location</skos:prefLabel>
+        <rdfs:label xml:lang="zh">地点</rdfs:label>
+        <skos:prefLabel xml:lang="zh">地点</skos:prefLabel>
+        <skos:narrower rdf:resource="#Ancient_Greek_Location"/>
+        <skos:narrower rdf:resource="#Ancient_Chinese_Location"/>
+        <skos:related rdf:resource="#Philosopher"/>
+        <skos:related rdf:resource="#Philosopher"/>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="#Ancient_Greek_Philosophical_Work">
+        <skos:inScheme rdf:resource="http://www.ontologia.fr/OTB/NUAA_philosophers"/>
+        <rdfs:label xml:lang="en">ancient greek philosophical work</rdfs:label>
+        <skos:prefLabel xml:lang="en">ancient greek philosophical work</skos:prefLabel>
+        <rdfs:label xml:lang="zh">古希腊哲学著作</rdfs:label>
+        <skos:prefLabel xml:lang="zh">古希腊哲学著作</skos:prefLabel>
+        <skos:broader rdf:resource="#Philosophical_Work"/>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="#Philosophical_Work">
+        <skos:inScheme rdf:resource="http://www.ontologia.fr/OTB/NUAA_philosophers"/>
+        <skos:topConceptOf rdf:resource="http://www.ontologia.fr/OTB/NUAA_philosophers"/>
+        <rdfs:label xml:lang="en">philosophical work</rdfs:label>
+        <skos:prefLabel xml:lang="en">philosophical work</skos:prefLabel>
+        <rdfs:label xml:lang="zh">哲理工作</rdfs:label>
+        <skos:prefLabel xml:lang="zh">哲理工作</skos:prefLabel>
+        <skos:narrower rdf:resource="#Ancient_Greek_Philosophical_Work"/>
+        <skos:narrower rdf:resource="#Ancient_Chinese_Philosophical_Work"/>
+        <skos:related rdf:resource="#Philosopher"/>
+    </skos:Concept>
+
+	<!-- 
+	//////////////////////////////////////////////////////////
+	//
+	// OWL
+	//
+	//////////////////////////////////////////////////////////
+	-->
+
+	<!--  OWL Ontology -->
+
+    <owl:Ontology rdf:about="http://www.ontologia.fr/OTB/NUAA_philosophers">
+        <dc:title>Ancient-Greek-and-Chinese-Philosophers</dc:title>
+        <dc:description>The current ontoterminology entitled "Ancient Greek and Chinese Philosophers" was developed in the context of the NUAA training for knowledge modelling instructed by Dr. Maria Papadopoulou and Rafail Giannadakis and focuses on modelling Ancient Greek and Chinese philosophers, their works and their chronological and spatial distribution.</dc:description>
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-6-26</dc:issued>
+        <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-6-29</dc:modified>
+        <dc:creator>Rafail Giannadakis</dc:creator>
+        <dc:publisher>University of Crete - TALOS</dc:publisher>
+    </owl:Ontology>
+
+	<!--  OWL Object Properties -->
+
+    <owl:ObjectProperty rdf:about="#hasPart">
+        <rdfs:label>hasPart</rdfs:label>
+        <owl:inverseOf rdf:resource="#partOf"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="#partOf">
+        <rdfs:label>partOf</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="#isDeathPlaceOf">
+        <rdfs:label>isDeathPlaceOf</rdfs:label>
+        <rdfs:domain rdf:resource="#Location"/>
+        <rdfs:range rdf:resource="#Philosopher"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="#hasFunction">
+        <rdfs:label>hasFunction</rdfs:label>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="#isBirthPlaceOf">
+        <rdfs:label>isBirthPlaceOf</rdfs:label>
+        <rdfs:domain rdf:resource="#Location"/>
+        <rdfs:range rdf:resource="#Philosopher"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="#isWrittenBy">
+        <rdfs:label>isWrittenBy</rdfs:label>
+        <rdfs:domain rdf:resource="#Philosophical_Work"/>
+        <rdfs:range rdf:resource="#Philosopher"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="#hasWritten">
+        <rdfs:label>hasWritten</rdfs:label>
+        <rdfs:domain rdf:resource="#Philosopher"/>
+        <rdfs:range rdf:resource="#Philosophical_Work"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="#isStudentOf">
+        <rdfs:label>isStudentOf</rdfs:label>
+        <rdfs:domain rdf:resource="#Philosopher"/>
+        <rdfs:range rdf:resource="#Philosopher"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="#isRelatedTo">
+        <rdfs:label>isRelatedTo</rdfs:label>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="#hasPart">
+        <rdfs:label>hasPart</rdfs:label>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="#isTeacherOf">
+        <rdfs:label>isTeacherOf</rdfs:label>
+        <rdfs:domain rdf:resource="#Philosopher"/>
+        <rdfs:range rdf:resource="#Philosopher"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="#hasBirthPlace">
+        <rdfs:label>hasBirthPlace</rdfs:label>
+        <rdfs:domain rdf:resource="#Philosopher"/>
+        <rdfs:range rdf:resource="#Location"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="#hasDeathPlace">
+        <rdfs:label>hasDeathPlace</rdfs:label>
+        <rdfs:domain rdf:resource="#Philosopher"/>
+        <rdfs:range rdf:resource="#Location"/>
+    </owl:ObjectProperty>
+
+	<!--  OWL Data Properties -->
+
+    <owl:DatatypeProperty rdf:about="#hasCoordinates">
+        <rdfs:label>hasCoordinates</rdfs:label>
+        <rdfs:domain rdf:resource="#Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="#bornIn">
+        <rdfs:label>bornIn</rdfs:label>
+        <rdfs:domain rdf:resource="#Philosopher"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="#diedIn">
+        <rdfs:label>diedIn</rdfs:label>
+        <rdfs:domain rdf:resource="#Philosopher"/>
+    </owl:DatatypeProperty>
+
+	<!--  OWL Classes -->
+
+    <owl:Class rdf:about="#Ancient_Greek_Philosopher">
+        <rdfs:label xml:lang="en">ancient greek philosopher</rdfs:label>
+        <skos:prefLabel xml:lang="en">ancient greek philosopher</skos:prefLabel>
+        <rdfs:label xml:lang="zh">古希腊哲学家</rdfs:label>
+        <skos:prefLabel xml:lang="zh">古希腊哲学家</skos:prefLabel>
+        <rdfs:subClassOf rdf:resource="#Philosopher"/>
+        <owl:disjointWith rdf:resource="#Ancient_Chinese_Philosopher"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#ownDifference"/>
+                <owl:hasValue rdf:resource="#ancient_greek"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+    <owl:Class rdf:about="#Ancient_Chinese_Philosopher">
+        <rdfs:label xml:lang="en">ancient chinese philosopher</rdfs:label>
+        <skos:prefLabel xml:lang="en">ancient chinese philosopher</skos:prefLabel>
+        <rdfs:label xml:lang="zh">中国古代哲学家</rdfs:label>
+        <skos:prefLabel xml:lang="zh">中国古代哲学家</skos:prefLabel>
+        <rdfs:subClassOf rdf:resource="#Philosopher"/>
+        <owl:disjointWith rdf:resource="#Ancient_Greek_Philosopher"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#ownDifference"/>
+                <owl:hasValue rdf:resource="#ancient_chinese"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+    <owl:Class rdf:about="#Ancient_Greek_Location">
+        <rdfs:label xml:lang="en">ancient greek location</rdfs:label>
+        <skos:prefLabel xml:lang="en">ancient greek location</skos:prefLabel>
+        <rdfs:label xml:lang="zh">古希腊地点</rdfs:label>
+        <skos:prefLabel xml:lang="zh">古希腊地点</skos:prefLabel>
+        <rdfs:subClassOf rdf:resource="#Location"/>
+        <owl:disjointWith rdf:resource="#Ancient_Chinese_Location"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#ownDifference"/>
+                <owl:hasValue rdf:resource="#ancient_greek"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+    <owl:Class rdf:about="#Ancient_Chinese_Location">
+        <rdfs:label xml:lang="en">ancient chinese location</rdfs:label>
+        <skos:prefLabel xml:lang="en">ancient chinese location</skos:prefLabel>
+        <rdfs:label xml:lang="zh">古代中国地点</rdfs:label>
+        <skos:prefLabel xml:lang="zh">古代中国地点</skos:prefLabel>
+        <rdfs:subClassOf rdf:resource="#Location"/>
+        <owl:disjointWith rdf:resource="#Ancient_Greek_Location"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#ownDifference"/>
+                <owl:hasValue rdf:resource="#ancient_chinese"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+    <owl:Class rdf:about="#Ancient_Chinese_Philosophical_Work">
+        <rdfs:label xml:lang="en">ancient chinese philosophical work</rdfs:label>
+        <skos:prefLabel xml:lang="en">ancient chinese philosophical work</skos:prefLabel>
+        <rdfs:label xml:lang="zh">中国古代哲学著作</rdfs:label>
+        <skos:prefLabel xml:lang="zh">中国古代哲学著作</skos:prefLabel>
+        <rdfs:subClassOf rdf:resource="#Philosophical_Work"/>
+        <owl:disjointWith rdf:resource="#Ancient_Greek_Philosophical_Work"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#ownDifference"/>
+                <owl:hasValue rdf:resource="#ancient_chinese"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+    <owl:Class rdf:about="#Philosopher">
+        <rdfs:label xml:lang="en">philosopher</rdfs:label>
+        <skos:prefLabel xml:lang="en">philosopher</skos:prefLabel>
+        <rdfs:label xml:lang="zh">哲学家</rdfs:label>
+        <skos:prefLabel xml:lang="zh">哲学家</skos:prefLabel>
+        <owl:disjointWith rdf:resource="#Location"/>
+        <owl:disjointWith rdf:resource="#Philosophical_Work"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#ownDifference"/>
+                <owl:hasValue rdf:resource="#philosopher"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#isStudentOf"/>
+                <owl:someValuesFrom rdf:resource="#Philosopher"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasBirthPlace"/>
+                <owl:someValuesFrom rdf:resource="#Location"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasDeathPlace"/>
+                <owl:someValuesFrom rdf:resource="#Location"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#isTeacherOf"/>
+                <owl:someValuesFrom rdf:resource="#Philosopher"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasWritten"/>
+                <owl:someValuesFrom rdf:resource="#Philosophical_Work"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#bornIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#diedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+    <owl:Class rdf:about="#Location">
+        <rdfs:label xml:lang="en">location</rdfs:label>
+        <skos:prefLabel xml:lang="en">location</skos:prefLabel>
+        <rdfs:label xml:lang="zh">地点</rdfs:label>
+        <skos:prefLabel xml:lang="zh">地点</skos:prefLabel>
+        <owl:disjointWith rdf:resource="#Philosopher"/>
+        <owl:disjointWith rdf:resource="#Philosophical_Work"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#ownDifference"/>
+                <owl:hasValue rdf:resource="#location"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#isDeathPlaceOf"/>
+                <owl:someValuesFrom rdf:resource="#Philosopher"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#isBirthPlaceOf"/>
+                <owl:someValuesFrom rdf:resource="#Philosopher"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasCoordinates"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+    <owl:Class rdf:about="#Ancient_Greek_Philosophical_Work">
+        <rdfs:label xml:lang="en">ancient greek philosophical work</rdfs:label>
+        <skos:prefLabel xml:lang="en">ancient greek philosophical work</skos:prefLabel>
+        <rdfs:label xml:lang="zh">古希腊哲学著作</rdfs:label>
+        <skos:prefLabel xml:lang="zh">古希腊哲学著作</skos:prefLabel>
+        <rdfs:subClassOf rdf:resource="#Philosophical_Work"/>
+        <owl:disjointWith rdf:resource="#Ancient_Chinese_Philosophical_Work"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#ownDifference"/>
+                <owl:hasValue rdf:resource="#ancient_greek"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+    <owl:Class rdf:about="#Philosophical_Work">
+        <rdfs:label xml:lang="en">philosophical work</rdfs:label>
+        <skos:prefLabel xml:lang="en">philosophical work</skos:prefLabel>
+        <rdfs:label xml:lang="zh">哲理工作</rdfs:label>
+        <skos:prefLabel xml:lang="zh">哲理工作</skos:prefLabel>
+        <owl:disjointWith rdf:resource="#Location"/>
+        <owl:disjointWith rdf:resource="#Philosopher"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#ownDifference"/>
+                <owl:hasValue rdf:resource="#philosophical_work"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#isWrittenBy"/>
+                <owl:someValuesFrom rdf:resource="#Philosopher"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+	<!--  OWL Individuals -->
+
+    <owl:NamedIndividual rdf:about="#spring_and_autumn_annals">
+        <rdfs:label xml:lang="en">spring_and_autumn_annals</rdfs:label>
+        <skos:prefLabel xml:lang="en">spring_and_autumn_annals</skos:prefLabel>
+        <rdf:type rdf:resource="#Ancient_Chinese_Philosophical_Work"/>
+        <isWrittenBy rdf:resource="#dong_zhongshu"/>        <rdfs:seeAlso rdf:resource="https://baike.baidu.com/item/%E6%98%A5%E7%A7%8B%E7%B9%81%E9%9C%B2/784769?fromModule=lemma_inlink"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="#qufu">
+        <rdfs:label xml:lang="en">qufu</rdfs:label>
+        <skos:prefLabel xml:lang="en">qufu</skos:prefLabel>
+        <rdf:type rdf:resource="#Ancient_Chinese_Location"/>
+        <skos:note>GPS Coordinates, Nearby Cities &amp; Power Plants). (n.d.). Database.Earth. Retrieved June 28, 2024, from https:database.earthcountrieschinaregionsshandongcitiesQufu</skos:note>
+        <hasCoordinates rdf:datatype="http://www.w3.org/2001/XMLSchema#string">35.59667,_116.99111</hasCoordinates>
+        <isBirthPlaceOf rdf:resource="#confucius"/>        <isDeathPlaceOf rdf:resource="#confucius"/>    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="#stageira">
+        <rdfs:label xml:lang="en">stageira</rdfs:label>
+        <skos:prefLabel xml:lang="en">stageira</skos:prefLabel>
+        <rdf:type rdf:resource="#Ancient_Greek_Location"/>
+        <skos:note>Coordinates: E.N. Borza, Brady Kiesling, R. Talbert, Johan Åhlfeldt, Jeffrey Becker, Tom Elliott, DARMC, G. Reger, and Sean Gillies, 'Stageira: a Pleiades place resource', Pleiades: A Gazetteer of Past Places, 2023 https:pleiades.stoa.orgplaces501625 [accessed: 27 June 2024] </skos:note>
+        <hasCoordinates rdf:datatype="http://www.w3.org/2001/XMLSchema#string">40.5917869176,_23.795327785</hasCoordinates>
+        <isBirthPlaceOf rdf:resource="#aristotle"/>        <rdfs:seeAlso rdf:resource="https://pleiades.stoa.org/places/501625"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="#guangchuan">
+        <rdfs:label xml:lang="en">guangchuan</rdfs:label>
+        <skos:prefLabel xml:lang="en">guangchuan</skos:prefLabel>
+        <rdf:type rdf:resource="#Ancient_Chinese_Location"/>
+        <hasCoordinates rdf:datatype="http://www.w3.org/2001/XMLSchema#string">37.73222,_115.70111</hasCoordinates>
+        <isBirthPlaceOf rdf:resource="#dong_zhongshu"/>        <isDeathPlaceOf rdf:resource="#dong_zhongshu"/>    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="#republic">
+        <rdfs:label xml:lang="en">republic</rdfs:label>
+        <skos:prefLabel xml:lang="en">republic</skos:prefLabel>
+        <rdf:type rdf:resource="#Ancient_Greek_Philosophical_Work"/>
+        <isWrittenBy rdf:resource="#plato"/>        <rdfs:seeAlso rdf:resource="https://baike.baidu.com/item/%E5%AF%B9%E8%AF%9D%E5%BD%95/2224297?fromModule=lemma_inlink"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="#theophrastus">
+        <rdfs:label xml:lang="en">theophrastus</rdfs:label>
+        <skos:prefLabel xml:lang="en">theophrastus</skos:prefLabel>
+        <rdf:type rdf:resource="#Ancient_Greek_Philosopher"/>
+        <isStudentOf rdf:resource="#aristotle"/>    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="#dong_zhongshu">
+        <rdfs:label xml:lang="en">dong_zhongshu</rdfs:label>
+        <skos:prefLabel xml:lang="en">dong_zhongshu</skos:prefLabel>
+        <rdf:type rdf:resource="#Ancient_Chinese_Philosopher"/>
+        <diedIn>104_BCE</diedIn>
+        <bornIn>179_BCE</bornIn>
+        <hasWritten rdf:resource="#spring_and_autumn_annals"/>        <hasDeathPlace rdf:resource="#guangchuan"/>        <hasBirthPlace rdf:resource="#guangchuan"/>        <foaf:depiction rdf:resource="https://pic.rmb.bdstatic.com/bjh/240513/dump/e4b524e0855c49f7d0ae7285041864ae.jpeg"/>
+        <rdfs:seeAlso rdf:resource="https://baike.baidu.com/item/%E8%91%A3%E4%BB%B2%E8%88%92%E7%9F%B3%E5%83%8F/5341928?fromModule=search-result_lemma-recommend"/>
+        <rdfs:seeAlso rdf:resource="https://baike.baidu.com/item/%E8%91%A3%E4%BB%B2%E8%88%92/374982?fromModule=search-result_lemma-recommend"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="#plato">
+        <rdfs:label xml:lang="en">plato</rdfs:label>
+        <skos:prefLabel xml:lang="en">plato</skos:prefLabel>
+        <rdf:type rdf:resource="#Ancient_Greek_Philosopher"/>
+        <diedIn>34847_BCE</diedIn>
+        <bornIn>428-23_BCE</bornIn>
+        <isStudentOf rdf:resource="#socrates"/>        <hasWritten rdf:resource="#republic"/>        <isTeacherOf rdf:resource="#aristotle"/>        <hasDeathPlace rdf:resource="#athens"/>        <hasBirthPlace rdf:resource="#athens"/>        <rdfs:seeAlso rdf:resource="https://www.sohu.com/a/359915387_260616"/>
+        <rdfs:seeAlso rdf:resource="https://www.dancihu.com/yinghan/p/plato305166.htm"/>
+        <foaf:depiction rdf:resource="https://booklibimg.kfzimg.com/data/book_lib_img/author_pic/3aa/3aa3cde8444ac980b28ba1f1af3aaeb4.jpg"/>
+        <rdfs:seeAlso rdf:resource="https://baike.baidu.com/item/%E6%9F%8F%E6%8B%89%E5%9B%BE%E5%93%B2%E5%AD%A6/10987838?fr=ge_ala"/>
+        <rdfs:seeAlso rdf:resource="https://wenku.baidu.com/view/4e1eb9e775a20029bd64783e0912a21614797f85.html?_wkts_=1719388572144&amp;bdQuery=plato+philosopher&amp;needWelcomeRecommand=1"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="#aristotle">
+        <rdfs:label xml:lang="en">aristotle</rdfs:label>
+        <skos:prefLabel xml:lang="en">aristotle</skos:prefLabel>
+        <rdf:type rdf:resource="#Ancient_Greek_Philosopher"/>
+        <diedIn>322_BCE</diedIn>
+        <bornIn>384_BCE</bornIn>
+        <isStudentOf rdf:resource="#plato"/>        <hasWritten rdf:resource="#metaphysics"/>        <isTeacherOf rdf:resource="#theophrastus"/>        <hasDeathPlace rdf:resource="#chalcis"/>        <hasBirthPlace rdf:resource="#stageira"/>        <foaf:depiction rdf:resource="https://i0.wp.com/bookofthrees.com/wp-content/uploads/2014/10/Aristotle_Altemps_Inv8575.jpg"/>
+        <rdfs:seeAlso rdf:resource="https://wenku.baidu.com/view/4e1eb9e775a20029bd64783e0912a21614797f85.html?_wkts_=1719388572144&amp;bdQuery=plato+philosopher&amp;needWelcomeRecommand=1"/>
+        <rdfs:seeAlso rdf:resource="https://www.dancihu.com/yinghan/p/plato305166.htm"/>
+        <rdfs:seeAlso rdf:resource="https://www.sohu.com/a/359915387_260616"/>
+        <rdfs:seeAlso rdf:resource="https://baike.baidu.com/item/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7/26769?fromModule=lemma_search-box"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="#athens">
+        <rdfs:label xml:lang="en">athens</rdfs:label>
+        <skos:prefLabel xml:lang="en">athens</skos:prefLabel>
+        <rdf:type rdf:resource="#Ancient_Greek_Location"/>
+        <skos:note>Coordinates: J.S. Traill, Brady Kiesling, Sean Gillies, Chelsea Lee, Jeffrey Becker, Rachaelle L Browning, DARMC, R. Talbert, Johan Åhlfeldt, Alec Mitchell, Adam Rabinowitz, Tom Elliott, Pierre Motylewicz, April Kissinger, Eric Shea, Ryan Horne, and Sterling Wright, 'Athenae: a Pleiades place resource', Pleiades: A Gazetteer of Past Places, 2024 https:pleiades.stoa.orgplaces579885 [accessed: 27 June 2024]</skos:note>
+        <hasCoordinates rdf:datatype="http://www.w3.org/2001/XMLSchema#string">37.971808605,_23.72351227</hasCoordinates>
+        <isBirthPlaceOf rdf:resource="#plato"/>        <isDeathPlaceOf rdf:resource="#plato"/>        <rdfs:seeAlso rdf:resource="https://pleiades.stoa.org/places/579885"/>
+        <foaf:depiction rdf:resource="https://best-western-amazon-hotel.hotelsathens.org/data/Photos/OriginalPhoto/1260/126002/126002592.JPEG"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="#metaphysics">
+        <rdfs:label xml:lang="en">metaphysics</rdfs:label>
+        <skos:prefLabel xml:lang="en">metaphysics</skos:prefLabel>
+        <rdf:type rdf:resource="#Ancient_Greek_Philosophical_Work"/>
+        <isWrittenBy rdf:resource="#aristotle"/>        <rdfs:seeAlso rdf:resource="https://baike.baidu.com/item/%E5%AF%B9%E8%AF%9D%E5%BD%95/2224297?fromModule=lemma_inlink"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="#chalcis">
+        <rdfs:label xml:lang="en">chalcis</rdfs:label>
+        <skos:prefLabel xml:lang="en">chalcis</skos:prefLabel>
+        <rdf:type rdf:resource="#Ancient_Greek_Location"/>
+        <skos:note>Coordinates: J. Fossey, J. Morin, DARMC, Brady Kiesling, R. Talbert, Chris de Lisle, Jeffrey Becker, Tom Elliott, Pierre Motylewicz, G. Reger, and Sean Gillies, 'Chalcis: a Pleiades place resource', Pleiades: A Gazetteer of Past Places, 2024 https:pleiades.stoa.orgplaces540703 [accessed: 27 June 2024] </skos:note>
+        <hasCoordinates rdf:datatype="http://www.w3.org/2001/XMLSchema#string">38.457139,_23.621937</hasCoordinates>
+        <isDeathPlaceOf rdf:resource="#aristotle"/>        <rdfs:seeAlso rdf:resource="https://pleiades.stoa.org/places/540703"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="#confucius">
+        <rdfs:label xml:lang="en">confucius</rdfs:label>
+        <skos:prefLabel xml:lang="en">confucius</skos:prefLabel>
+        <rdf:type rdf:resource="#Ancient_Chinese_Philosopher"/>
+        <diedIn>479_BCE</diedIn>
+        <bornIn>551_BCE</bornIn>
+        <hasWritten rdf:resource="#analects"/>        <hasDeathPlace rdf:resource="#qufu"/>        <hasBirthPlace rdf:resource="#qufu"/>        <foaf:depiction rdf:resource="https://p3.itc.cn/q_70/images03/20211221/4d8a829d58ea4c63beef0a62c54731c3.png "/>
+        <rdfs:seeAlso rdf:resource="https://wenku.baidu.com/view/5e56ce4b1411cc7931b765ce0508763231127422.html"/>
+        <rdfs:seeAlso rdf:resource="https://www.dancihu.com/yinghan/p/plato305166.htm"/>
+        <rdfs:seeAlso rdf:resource="http://www.famousquotesandauthors.com/authors/confucius_quotes.html"/>
+        <rdfs:seeAlso rdf:resource="https://baike.baidu.com/item/%E5%AD%94%E5%AD%90/1584?fromModule=lemma_search-box"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="#socrates">
+        <rdfs:label xml:lang="en">socrates</rdfs:label>
+        <skos:prefLabel xml:lang="en">socrates</skos:prefLabel>
+        <rdf:type rdf:resource="#Ancient_Greek_Philosopher"/>
+        <isTeacherOf rdf:resource="#plato"/>        <foaf:depiction rdf:resource="https://img.mp.sohu.com/upload/20170709/6403ba2e0f0e45b7970fa496799be204_th.png"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="#analects">
+        <rdfs:label xml:lang="en">analects</rdfs:label>
+        <skos:prefLabel xml:lang="en">analects</skos:prefLabel>
+        <rdf:type rdf:resource="#Ancient_Chinese_Philosophical_Work"/>
+        <isWrittenBy rdf:resource="#confucius"/>        <rdfs:seeAlso rdf:resource="https://baike.baidu.com/item/The%20Analects?fromModule=lemma_search-box"/>
+    </owl:NamedIndividual>
+
+	<!-- 
+	//////////////////////////////////////////////////////////
+	//
+	// OntoLex-Lemon
+	//
+	//////////////////////////////////////////////////////////
+	-->
+
+    <ontolex:LexicalEntry rdf:about="#ancient_greek_philosophical_work_en">
+        <ontolex:lexicalForm>
+            <ontolex:Form rdf:about="#form_ancient_greek_philosophical_work_en">
+                <ontolex:writtenRep xml:lang="en">ancient greek philosophical work</ontolex:writtenRep>
+            </ontolex:Form>
+        </ontolex:lexicalForm>
+        <ontolex:evokes>
+            <ontolex:LexicalConcept rdf:about="#lexical_concept_ancient_greek_philosophical_work_en">
+                <ontolex:isEvokedBy rdf:resource="#ancient_greek_philosophical_work_en"/>
+                <skos:definition xml:lang="en"></skos:definition>
+            </ontolex:LexicalConcept>
+        </ontolex:evokes>
+        <ontolex:denotes rdf:resource="#Ancient_Greek_Philosophical_Work"/>
+    </ontolex:LexicalEntry>
+
+    <ontolex:LexicalEntry rdf:about="#ancient_greek_philosopher_en">
+        <ontolex:lexicalForm>
+            <ontolex:Form rdf:about="#form_ancient_greek_philosopher_en">
+                <ontolex:writtenRep xml:lang="en">ancient greek philosopher</ontolex:writtenRep>
+            </ontolex:Form>
+        </ontolex:lexicalForm>
+        <ontolex:evokes>
+            <ontolex:LexicalConcept rdf:about="#lexical_concept_ancient_greek_philosopher_en">
+                <ontolex:isEvokedBy rdf:resource="#ancient_greek_philosopher_en"/>
+                <skos:definition xml:lang="en"></skos:definition>
+            </ontolex:LexicalConcept>
+        </ontolex:evokes>
+        <ontolex:denotes rdf:resource="#Ancient_Greek_Philosopher"/>
+    </ontolex:LexicalEntry>
+
+    <ontolex:LexicalEntry rdf:about="#location_en">
+        <ontolex:lexicalForm>
+            <ontolex:Form rdf:about="#form_location_en">
+                <ontolex:writtenRep xml:lang="en">location</ontolex:writtenRep>
+            </ontolex:Form>
+        </ontolex:lexicalForm>
+        <ontolex:evokes>
+            <ontolex:LexicalConcept rdf:about="#lexical_concept_location_en">
+                <ontolex:isEvokedBy rdf:resource="#location_en"/>
+                <skos:definition xml:lang="en"></skos:definition>
+            </ontolex:LexicalConcept>
+        </ontolex:evokes>
+        <ontolex:denotes rdf:resource="#Location"/>
+    </ontolex:LexicalEntry>
+
+    <ontolex:LexicalEntry rdf:about="#philosopher_en">
+        <ontolex:lexicalForm>
+            <ontolex:Form rdf:about="#form_philosopher_en">
+                <ontolex:writtenRep xml:lang="en">philosopher</ontolex:writtenRep>
+            </ontolex:Form>
+        </ontolex:lexicalForm>
+        <ontolex:evokes>
+            <ontolex:LexicalConcept rdf:about="#lexical_concept_philosopher_en">
+                <ontolex:isEvokedBy rdf:resource="#philosopher_en"/>
+                <skos:definition xml:lang="en"></skos:definition>
+            </ontolex:LexicalConcept>
+        </ontolex:evokes>
+        <ontolex:denotes rdf:resource="#Philosopher"/>
+    </ontolex:LexicalEntry>
+
+    <ontolex:LexicalEntry rdf:about="#philosophical_work_en">
+        <ontolex:lexicalForm>
+            <ontolex:Form rdf:about="#form_philosophical_work_en">
+                <ontolex:writtenRep xml:lang="en">philosophical work</ontolex:writtenRep>
+            </ontolex:Form>
+        </ontolex:lexicalForm>
+        <ontolex:evokes>
+            <ontolex:LexicalConcept rdf:about="#lexical_concept_philosophical_work_en">
+                <ontolex:isEvokedBy rdf:resource="#philosophical_work_en"/>
+                <skos:definition xml:lang="en"></skos:definition>
+            </ontolex:LexicalConcept>
+        </ontolex:evokes>
+        <ontolex:denotes rdf:resource="#Philosophical_Work"/>
+    </ontolex:LexicalEntry>
+
+    <ontolex:LexicalEntry rdf:about="#ancient_greek_location_en">
+        <ontolex:lexicalForm>
+            <ontolex:Form rdf:about="#form_ancient_greek_location_en">
+                <ontolex:writtenRep xml:lang="en">ancient greek location</ontolex:writtenRep>
+            </ontolex:Form>
+        </ontolex:lexicalForm>
+        <ontolex:evokes>
+            <ontolex:LexicalConcept rdf:about="#lexical_concept_ancient_greek_location_en">
+                <ontolex:isEvokedBy rdf:resource="#ancient_greek_location_en"/>
+                <skos:definition xml:lang="en"></skos:definition>
+            </ontolex:LexicalConcept>
+        </ontolex:evokes>
+        <ontolex:denotes rdf:resource="#Ancient_Greek_Location"/>
+    </ontolex:LexicalEntry>
+
+    <ontolex:LexicalEntry rdf:about="#ancient_chinese_location_en">
+        <ontolex:lexicalForm>
+            <ontolex:Form rdf:about="#form_ancient_chinese_location_en">
+                <ontolex:writtenRep xml:lang="en">ancient chinese location</ontolex:writtenRep>
+            </ontolex:Form>
+        </ontolex:lexicalForm>
+        <ontolex:evokes>
+            <ontolex:LexicalConcept rdf:about="#lexical_concept_ancient_chinese_location_en">
+                <ontolex:isEvokedBy rdf:resource="#ancient_chinese_location_en"/>
+                <skos:definition xml:lang="en"></skos:definition>
+            </ontolex:LexicalConcept>
+        </ontolex:evokes>
+        <ontolex:denotes rdf:resource="#Ancient_Chinese_Location"/>
+    </ontolex:LexicalEntry>
+
+    <ontolex:LexicalEntry rdf:about="#ancient_chinese_philosopher_en">
+        <ontolex:lexicalForm>
+            <ontolex:Form rdf:about="#form_ancient_chinese_philosopher_en">
+                <ontolex:writtenRep xml:lang="en">ancient chinese philosopher</ontolex:writtenRep>
+            </ontolex:Form>
+        </ontolex:lexicalForm>
+        <ontolex:evokes>
+            <ontolex:LexicalConcept rdf:about="#lexical_concept_ancient_chinese_philosopher_en">
+                <ontolex:isEvokedBy rdf:resource="#ancient_chinese_philosopher_en"/>
+                <skos:definition xml:lang="en"></skos:definition>
+            </ontolex:LexicalConcept>
+        </ontolex:evokes>
+        <ontolex:denotes rdf:resource="#Ancient_Chinese_Philosopher"/>
+    </ontolex:LexicalEntry>
+
+    <ontolex:LexicalEntry rdf:about="#ancient_chinese_philosophical_work_en">
+        <ontolex:lexicalForm>
+            <ontolex:Form rdf:about="#form_ancient_chinese_philosophical_work_en">
+                <ontolex:writtenRep xml:lang="en">ancient chinese philosophical work</ontolex:writtenRep>
+            </ontolex:Form>
+        </ontolex:lexicalForm>
+        <ontolex:evokes>
+            <ontolex:LexicalConcept rdf:about="#lexical_concept_ancient_chinese_philosophical_work_en">
+                <ontolex:isEvokedBy rdf:resource="#ancient_chinese_philosophical_work_en"/>
+                <skos:definition xml:lang="en"></skos:definition>
+            </ontolex:LexicalConcept>
+        </ontolex:evokes>
+        <ontolex:denotes rdf:resource="#Ancient_Chinese_Philosophical_Work"/>
+    </ontolex:LexicalEntry>
+
+    <ontolex:LexicalEntry rdf:about="#中国古代哲学家_zh">
+        <ontolex:lexicalForm>
+            <ontolex:Form rdf:about="#form_中国古代哲学家_zh">
+                <ontolex:writtenRep xml:lang="zh">中国古代哲学家</ontolex:writtenRep>
+            </ontolex:Form>
+        </ontolex:lexicalForm>
+        <ontolex:evokes>
+            <ontolex:LexicalConcept rdf:about="#lexical_concept_中国古代哲学家_zh">
+                <ontolex:isEvokedBy rdf:resource="#中国古代哲学家_zh"/>
+                <skos:definition xml:lang="zh"></skos:definition>
+            </ontolex:LexicalConcept>
+        </ontolex:evokes>
+        <ontolex:denotes rdf:resource="#Ancient_Chinese_Philosopher"/>
+    </ontolex:LexicalEntry>
+
+    <ontolex:LexicalEntry rdf:about="#中国古代哲学著作_zh">
+        <ontolex:lexicalForm>
+            <ontolex:Form rdf:about="#form_中国古代哲学著作_zh">
+                <ontolex:writtenRep xml:lang="zh">中国古代哲学著作</ontolex:writtenRep>
+            </ontolex:Form>
+        </ontolex:lexicalForm>
+        <ontolex:evokes>
+            <ontolex:LexicalConcept rdf:about="#lexical_concept_中国古代哲学著作_zh">
+                <ontolex:isEvokedBy rdf:resource="#中国古代哲学著作_zh"/>
+                <skos:definition xml:lang="zh"></skos:definition>
+            </ontolex:LexicalConcept>
+        </ontolex:evokes>
+        <ontolex:denotes rdf:resource="#Ancient_Chinese_Philosophical_Work"/>
+    </ontolex:LexicalEntry>
+
+    <ontolex:LexicalEntry rdf:about="#古希腊哲学著作_zh">
+        <ontolex:lexicalForm>
+            <ontolex:Form rdf:about="#form_古希腊哲学著作_zh">
+                <ontolex:writtenRep xml:lang="zh">古希腊哲学著作</ontolex:writtenRep>
+            </ontolex:Form>
+        </ontolex:lexicalForm>
+        <ontolex:evokes>
+            <ontolex:LexicalConcept rdf:about="#lexical_concept_古希腊哲学著作_zh">
+                <ontolex:isEvokedBy rdf:resource="#古希腊哲学著作_zh"/>
+                <skos:definition xml:lang="zh"></skos:definition>
+            </ontolex:LexicalConcept>
+        </ontolex:evokes>
+        <ontolex:denotes rdf:resource="#Ancient_Greek_Philosophical_Work"/>
+    </ontolex:LexicalEntry>
+
+    <ontolex:LexicalEntry rdf:about="#地点_zh">
+        <ontolex:lexicalForm>
+            <ontolex:Form rdf:about="#form_地点_zh">
+                <ontolex:writtenRep xml:lang="zh">地点</ontolex:writtenRep>
+            </ontolex:Form>
+        </ontolex:lexicalForm>
+        <ontolex:evokes>
+            <ontolex:LexicalConcept rdf:about="#lexical_concept_地点_zh">
+                <ontolex:isEvokedBy rdf:resource="#地点_zh"/>
+                <skos:definition xml:lang="zh"></skos:definition>
+            </ontolex:LexicalConcept>
+        </ontolex:evokes>
+        <ontolex:denotes rdf:resource="#Location"/>
+    </ontolex:LexicalEntry>
+
+    <ontolex:LexicalEntry rdf:about="#古希腊地点_zh">
+        <ontolex:lexicalForm>
+            <ontolex:Form rdf:about="#form_古希腊地点_zh">
+                <ontolex:writtenRep xml:lang="zh">古希腊地点</ontolex:writtenRep>
+            </ontolex:Form>
+        </ontolex:lexicalForm>
+        <ontolex:evokes>
+            <ontolex:LexicalConcept rdf:about="#lexical_concept_古希腊地点_zh">
+                <ontolex:isEvokedBy rdf:resource="#古希腊地点_zh"/>
+                <skos:definition xml:lang="zh"></skos:definition>
+            </ontolex:LexicalConcept>
+        </ontolex:evokes>
+        <ontolex:denotes rdf:resource="#Ancient_Greek_Location"/>
+    </ontolex:LexicalEntry>
+
+    <ontolex:LexicalEntry rdf:about="#哲理工作_zh">
+        <ontolex:lexicalForm>
+            <ontolex:Form rdf:about="#form_哲理工作_zh">
+                <ontolex:writtenRep xml:lang="zh">哲理工作</ontolex:writtenRep>
+            </ontolex:Form>
+        </ontolex:lexicalForm>
+        <ontolex:evokes>
+            <ontolex:LexicalConcept rdf:about="#lexical_concept_哲理工作_zh">
+                <ontolex:isEvokedBy rdf:resource="#哲理工作_zh"/>
+                <skos:definition xml:lang="zh"></skos:definition>
+            </ontolex:LexicalConcept>
+        </ontolex:evokes>
+        <ontolex:denotes rdf:resource="#Philosophical_Work"/>
+    </ontolex:LexicalEntry>
+
+    <ontolex:LexicalEntry rdf:about="#古代中国地点_zh">
+        <ontolex:lexicalForm>
+            <ontolex:Form rdf:about="#form_古代中国地点_zh">
+                <ontolex:writtenRep xml:lang="zh">古代中国地点</ontolex:writtenRep>
+            </ontolex:Form>
+        </ontolex:lexicalForm>
+        <ontolex:evokes>
+            <ontolex:LexicalConcept rdf:about="#lexical_concept_古代中国地点_zh">
+                <ontolex:isEvokedBy rdf:resource="#古代中国地点_zh"/>
+                <skos:definition xml:lang="zh"></skos:definition>
+            </ontolex:LexicalConcept>
+        </ontolex:evokes>
+        <ontolex:denotes rdf:resource="#Ancient_Chinese_Location"/>
+    </ontolex:LexicalEntry>
+
+    <ontolex:LexicalEntry rdf:about="#古希腊哲学家_zh">
+        <ontolex:lexicalForm>
+            <ontolex:Form rdf:about="#form_古希腊哲学家_zh">
+                <ontolex:writtenRep xml:lang="zh">古希腊哲学家</ontolex:writtenRep>
+            </ontolex:Form>
+        </ontolex:lexicalForm>
+        <ontolex:evokes>
+            <ontolex:LexicalConcept rdf:about="#lexical_concept_古希腊哲学家_zh">
+                <ontolex:isEvokedBy rdf:resource="#古希腊哲学家_zh"/>
+                <skos:definition xml:lang="zh"></skos:definition>
+            </ontolex:LexicalConcept>
+        </ontolex:evokes>
+        <ontolex:denotes rdf:resource="#Ancient_Greek_Philosopher"/>
+    </ontolex:LexicalEntry>
+
+    <ontolex:LexicalEntry rdf:about="#哲学家_zh">
+        <ontolex:lexicalForm>
+            <ontolex:Form rdf:about="#form_哲学家_zh">
+                <ontolex:writtenRep xml:lang="zh">哲学家</ontolex:writtenRep>
+            </ontolex:Form>
+        </ontolex:lexicalForm>
+        <ontolex:evokes>
+            <ontolex:LexicalConcept rdf:about="#lexical_concept_哲学家_zh">
+                <ontolex:isEvokedBy rdf:resource="#哲学家_zh"/>
+                <skos:definition xml:lang="zh"></skos:definition>
+            </ontolex:LexicalConcept>
+        </ontolex:evokes>
+        <ontolex:denotes rdf:resource="#Philosopher"/>
+    </ontolex:LexicalEntry>
+
+
+<!-- *********************************************** -->
+<!-- ONTOTERMINOLOGY VOCABULARY (OTV) -->
+<!-- http://ontoterminology.com/ -->
+<!-- *********************************************** -->
+
+<!-- ***********************************************
+                     OTV CLASSES
+     *********************************************** -->
+
+<!-- Conceptual dimension -->
+
+<!-- CTT concepts are represented as OWL classes
+     and as instances of the OTVConcept  class -->
+
+<owl:Class rdf:about="http://www.ontologia.fr/OTB/otv#OTVCore">
+        <rdfs:label>OTVCore</rdfs:label>      
+        <rdfs:comment>The Generic Concept of OTV Concepts</rdfs:comment>
+        <rdfs:isDefinedBy>http://www.ontologia.fr/OTB/otv.rdf</rdfs:isDefinedBy>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.ontologia.fr/OTB/otv#Concept">
+        <rdfs:label>Concept</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ontologia.fr/OTB/otv#OTVCore"/>     
+        <rdfs:comment>The class of OTV Concept</rdfs:comment>
+        <rdfs:comment>Les concepts sont des instances de la classe Concept</rdfs:comment>
+        <rdfs:isDefinedBy>http://www.ontologia.fr/OTB/otv.rdf</rdfs:isDefinedBy>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#AxisOfAnalysis"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Difference"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Relation"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Attribute"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Object"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Term"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#ProperName"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.ontologia.fr/OTB/otv#AxisOfAnalysis">
+        <rdfs:label>AxisOfAnalysis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ontologia.fr/OTB/otv#OTVCore"/>     
+        <rdfs:comment>The class of OTV AxesOfAnalysis</rdfs:comment>
+        <rdfs:comment>Les axes d analyse sont des instances de la classe AxesOfAnalysis</rdfs:comment>
+        <rdfs:isDefinedBy>http://www.ontologia.fr/OTB/otv.rdf</rdfs:isDefinedBy>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Concept"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Difference"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Relation"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Attribute"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Object"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Term"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#ProperName"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.ontologia.fr/OTB/otv#Difference">
+        <rdfs:label>Difference</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ontologia.fr/OTB/otv#OTVCore"/>    
+        <rdfs:comment>The class of OTV Differences</rdfs:comment>
+       <rdfs:comment>Les différence sont des instances de la classe Difference</rdfs:comment>
+        <rdfs:isDefinedBy>http://www.ontologia.fr/OTB/otv.rdf</rdfs:isDefinedBy>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#AxisOfAnalysis"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Concept"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Relation"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Attribute"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Object"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Term"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#ProperName"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.ontologia.fr/OTB/otv#Relation">
+        <rdfs:label>Relation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ontologia.fr/OTB/otv#OTVCore"/>    
+        <rdfs:comment>The class of OTV Relations</rdfs:comment>
+        <rdfs:isDefinedBy>http://www.ontologia.fr/OTB/otv.rdf</rdfs:isDefinedBy>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#AxisOfAnalysis"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Difference"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Concept"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Attribute"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Object"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Term"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#ProperName"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.ontologia.fr/OTB/otv#Attribute">
+        <rdfs:label>Attribute</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ontologia.fr/OTB/otv#OTVCore"/>    
+        <rdfs:comment>The class of OTV Attributes</rdfs:comment>
+        <rdfs:isDefinedBy>http://www.ontologia.fr/OTB/otv.rdf</rdfs:isDefinedBy>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#AxisOfAnalysis"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Difference"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Relation"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Concept"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Object"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Term"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#ProperName"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.ontologia.fr/OTB/otv#Object">
+        <rdfs:label>Object</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ontologia.fr/OTB/otv#OTVCore"/>
+        <rdfs:comment>The class of OTV Objects</rdfs:comment>
+        <rdfs:isDefinedBy>http://www.ontologia.fr/OTB/otv.rdf</rdfs:isDefinedBy>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#AxisOfAnalysis"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Difference"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Relation"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Attribute"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Concept"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Term"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#ProperName"/>
+</owl:Class>
+
+<!-- Linguistic dimension -->
+
+<owl:Class rdf:about="http://www.ontologia.fr/OTB/otv#Term">
+ 	      <rdfs:label>Term</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ontologia.fr/OTB/otv#OTVCore"/>
+        <rdfs:comment>The class of OTV Terms</rdfs:comment>
+        <rdfs:isDefinedBy>http://www.ontologia.fr/OTB/otv.rdf</rdfs:isDefinedBy>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#AxisOfAnalysis"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Difference"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Relation"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Attribute"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Object"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Concept"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#ProperName"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.ontologia.fr/OTB/otv#ProperName">
+        <rdfs:label>ProperName</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ontologia.fr/OTB/otv#OTVCore"/>
+        <rdfs:comment>The class of OTV ProperName</rdfs:comment>
+        <rdfs:isDefinedBy>http://www.ontologia.fr/OTB/otv.rdf</rdfs:isDefinedBy>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#AxisOfAnalysis"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Difference"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Relation"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Attribute"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Object"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Term"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Concept"/>
+</owl:Class>
+
+<!-- ***********************************************
+                     OTV OBJECT PROPERTIES
+     *********************************************** -->
+
+<!-- Conceptual dimension -->
+
+<owl:ObjectProperty rdf:about="http://www.ontologia.fr/OTB/otv#isA">
+    <rdfs:label>isA</rdfs:label> 
+    <rdfs:comment>Generic relationship between 2 concepts</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.ontologia.fr/OTB/otv#Concept"/>
+    <rdfs:range rdf:resource="http://www.ontologia.fr/OTB/otv#Concept"/>
+    <rdfs:isDefinedBy>http://www.ontologia.fr/OTB/otv.rdf</rdfs:isDefinedBy>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.ontologia.fr/OTB/otv#ownDifference">
+  <rdfs:label>ownDifference</rdfs:label>
+  <rdfs:comment>Link a concept to one of its specific differences</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.ontologia.fr/OTB/otv#Concept"/>
+    <rdfs:range rdf:resource="http://www.ontologia.fr/OTB/otv#Difference"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.ontologia.fr/OTB/otv#inheritedDifference">
+  <rdfs:label>inheritedDifference</rdfs:label>
+  <rdfs:comment>Link a concept to one of its inherited differences</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.ontologia.fr/OTB/otv#Concept"/>
+    <rdfs:range rdf:resource="http://www.ontologia.fr/OTB/otv#Difference"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.ontologia.fr/OTB/otv#difference">
+  <rdfs:label>difference</rdfs:label>
+  <rdfs:comment>Link a concept to one of its differences either inherited or specific</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.ontologia.fr/OTB/otv#Concept"/>
+    <rdfs:range rdf:resource="http://www.ontologia.fr/OTB/otv#Difference"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.ontologia.fr/OTB/otv#belongsToAxis">
+  <rdfs:label>belongsToAxis</rdfs:label>
+  <rdfs:comment>Indicate the axis of analysis to which the difference belongs</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.ontologia.fr/OTB/otv#Difference"/>
+    <rdfs:range rdf:resource="http://www.ontologia.fr/OTB/otv#AxisOfAnalysis"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.ontologia.fr/OTB/otv#containsDifference">
+  <rdfs:label>containsDifference</rdfs:label>
+  <rdfs:comment>Indicate the differences which belongs to the axis of analysis</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.ontologia.fr/OTB/otv#AxisOfAnalysis"/>
+    <rdfs:range rdf:resource="http://www.ontologia.fr/OTB/otv#Difference"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.ontologia.fr/OTB/otv#instanceOf">
+    <rdfs:label>instanceOf</rdfs:label> 
+    <rdfs:comment>instance relationship</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.ontologia.fr/OTB/otv#Object"/>
+    <rdfs:range rdf:resource="http://www.ontologia.fr/OTB/otv#Concept"/>
+  <rdfs:isDefinedBy>http://www.ontologia.fr/OTB/otv.rdf</rdfs:isDefinedBy>
+</owl:ObjectProperty>
+
+<!-- Relations between the 2 dimensions -->
+
+<owl:ObjectProperty rdf:about="http://www.ontologia.fr/OTB/otv#denotedByTerm">
+    <rdfs:label>denotedByTerm</rdfs:label> 
+    <rdfs:comment>Link a concept to a term which denotes it</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.ontologia.fr/OTB/otv#Concept"/>
+    <rdfs:range rdf:resource="http://www.ontologia.fr/OTB/otv#Term"/>
+  <rdfs:isDefinedBy>http://www.ontologia.fr/OTB/otv.rdf</rdfs:isDefinedBy>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.ontologia.fr/OTB/otv#denotedConcept">
+    <rdfs:label>denotedConcept</rdfs:label> 
+    <rdfs:comment>Property whose value is the OTV concept denoted by the term: &apos;a term is a verbal designation of a concept&apos; (ISO 1087)</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.ontologia.fr/OTB/otv#Term"/>
+    <rdfs:range rdf:resource="http://www.ontologia.fr/OTB/otv#Concept"/>
+    <rdfs:isDefinedBy>http://www.ontologia.fr/OTB/otv.rdf</rdfs:isDefinedBy>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.ontologia.fr/OTB/otv#denotedByProperName">
+    <rdfs:label>denotedByProperName</rdfs:label>
+    <rdfs:comment>The denotedByPrperName property links an individual (object) to a proper name which denotes it</rdfs:comment>
+ 	<rdfs:domain rdf:resource="http://www.ontologia.fr/OTB/otv#Object"/>
+ 	<rdfs:range rdf:resource="http://www.ontologia.fr/OTB/otv#ProperName"/>
+    <rdfs:isDefinedBy>http://www.ontologia.fr/OTB/otv.rdf</rdfs:isDefinedBy>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.ontologia.fr/OTB/otv#denotedObject">
+   	<rdfs:label>denotedObject</rdfs:label>
+    <rdfs:comment>Property whose value is the OTV object denoted by the proper name</rdfs:comment>
+ 	<rdfs:domain rdf:resource="http://www.ontologia.fr/OTB/otv#ProperName"/>
+ 	<rdfs:range rdf:resource="http://www.ontologia.fr/OTB/otv#Object"/>
+    <rdfs:isDefinedBy>http://www.ontologia.fr/OTB/otv.rdf</rdfs:isDefinedBy>
+</owl:ObjectProperty>
+
+
+<!-- ***********************************************
+                      OTV ANNOTATION PROPERTIES
+       *********************************************** -->
+
+<owl:AnnotationProperty rdf:about="http://www.ontologia.fr/OTB/otv#conceptName">
+    <rdfs:label>conceptName</rdfs:label> 
+    <rdfs:comment>Name of the concept</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.ontologia.fr/OTB/otv#Concept"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:isDefinedBy>http://www.ontologia.fr/OTB/otv.rdf</rdfs:isDefinedBy>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://www.ontologia.fr/OTB/otv#termName">
+    <rdfs:label>termName</rdfs:label> <!-- équivalent à rdfs:label -->
+    <rdfs:comment>String representing the term</rdfs:comment>
+ 	  <rdfs:domain rdf:resource="http://www.ontologia.fr/OTB/otv#Term"/>
+ 	  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+   	<rdfs:isDefinedBy>http://www.ontologia.fr/OTB/otv.rdf</rdfs:isDefinedBy>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://www.ontologia.fr/OTB/otv#properName">
+ 	  <rdfs:label>properName</rdfs:label>
+    <rdfs:comment>String representing the proper name</rdfs:comment>
+ 	  <rdfs:domain rdf:resource="http://www.ontologia.fr/OTB/otv#ProperName"/>
+ 	  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+   	<rdfs:isDefinedBy>http://www.ontologia.fr/OTB/otv.rdf</rdfs:isDefinedBy>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://www.ontologia.fr/OTB/otv#language">
+ 	  <rdfs:label>language</rdfs:label>
+    <rdfs:comment>Property that denotes the language of the term</rdfs:comment>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.ontologia.fr/OTB/otv#Term"/>
+          <rdf:Description rdf:about="http://www.ontologia.fr/OTB/otv#ProperName"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+ 	  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+   	<rdfs:isDefinedBy>http://www.ontologia.fr/OTB/otv.rdf</rdfs:isDefinedBy>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://www.ontologia.fr/OTB/otv#termStatus">
+	 <rdfs:label>termStatus</rdfs:label>
+    <rdfs:comment>Property that indicates the status of the term</rdfs:comment>
+ 	  <rdfs:domain rdf:resource="http://www.ontologia.fr/OTB/otv#Term"/>
+ 	  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+   	<rdfs:isDefinedBy>http://www.ontologia.fr/OTB/otv.rdf</rdfs:isDefinedBy>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://www.ontologia.fr/OTB/otv#termDefinition">
+   <rdfs:label>termDefinition</rdfs:label>
+    <rdfs:comment>Defintion of the term in natural language</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.ontologia.fr/OTB/otv#Term"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:isDefinedBy>http://www.ontologia.fr/OTB/otv.rdf</rdfs:isDefinedBy>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://www.ontologia.fr/OTB/otv#context">
+   <rdfs:label>context</rdfs:label>
+    <rdfs:comment>Context associated to the term</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.ontologia.fr/OTB/otv#Term"/>
+    <rdfs:isDefinedBy>http://www.ontologia.fr/OTB/otv.rdf</rdfs:isDefinedBy>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://www.ontologia.fr/OTB/otv#note">
+   <rdfs:label>note</rdfs:label>
+    <rdfs:comment>Note associated to the term</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.ontologia.fr/OTB/otv#Term"/>
+    <rdfs:isDefinedBy>http://www.ontologia.fr/OTB/otv.rdf</rdfs:isDefinedBy>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://www.ontologia.fr/OTB/otv#partOfSpeech">
+   <rdfs:label>partOfSpeech</rdfs:label>
+    <rdfs:comment>Part of Speech of the term</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.ontologia.fr/OTB/otv#Term"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:isDefinedBy>http://www.ontologia.fr/OTB/otv.rdf</rdfs:isDefinedBy>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://www.ontologia.fr/OTB/otv#gender">
+   <rdfs:label>gender</rdfs:label>
+    <rdfs:comment>Gender of the term</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.ontologia.fr/OTB/otv#Term"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:isDefinedBy>http://www.ontologia.fr/OTB/otv.rdf</rdfs:isDefinedBy>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://www.ontologia.fr/OTB/otv#beginDate">
+    <rdfs:label>beginDate</rdfs:label>
+   	<rdfs:comment>Property that indicates the begin date of of an axis of analysis, concept, term, object</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.ontologia.fr/OTB/otv#OTVCore"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+   	<rdfs:isDefinedBy>http://www.ontologia.fr/OTB/otv.rdf</rdfs:isDefinedBy>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://www.ontologia.fr/OTB/otv#endDate">
+	 <rdfs:label>endDate</rdfs:label>
+ 	  <rdfs:comment>Property that indicates the end date of of an axis of analysis, concept, term, object</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.ontologia.fr/OTB/otv#OTVCore"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+   	<rdfs:isDefinedBy>http://www.ontologia.fr/OTB/otv.rdf</rdfs:isDefinedBy>
+</owl:AnnotationProperty>
+
+
+	<!-- 
+	//////////////////////////////////////////////////////////
+	//
+	// OTV
+	//
+	//////////////////////////////////////////////////////////
+	-->
+
+<!-- ONTOTERMINOLOGY
+
+	Ontoterminology: Ancient-Greek-and-Chinese-Philosophers
+	Author: Rafail Giannadakis
+	Creation date: June 26, 2024
+	Export date: June 29, 2024 time: 6:28:49 PM
+	Generated by Tedi version: 3.7
+	http://ontoterminology.com/tedi -->
+
+	<!--  OTV Axes of Analysis and Differences -->
+
+    <!-- Axis of Analysis: Origin -->
+
+    <otv:AxisOfAnalysis rdf:about="#Origin">
+        <rdfs:label>Origin</rdfs:label>
+        <otv:containsDifference rdf:resource="#ancient_chinese"/>
+        <otv:containsDifference rdf:resource="#ancient_greek"/>
+    </otv:AxisOfAnalysis>
+
+    <otv:Difference rdf:about="#ancient_chinese">
+        <rdf:type rdf:resource="http://www.ontologia.fr/OTB/otv#Difference"/>
+        <rdfs:label>ancient chinese</rdfs:label>
+        <otv:belongsToAxis rdf:resource="#Origin"/>
+    </otv:Difference>
+
+    <otv:Difference rdf:about="#ancient_greek">
+        <rdf:type rdf:resource="http://www.ontologia.fr/OTB/otv#Difference"/>
+        <rdfs:label>ancient greek</rdfs:label>
+        <otv:belongsToAxis rdf:resource="#Origin"/>
+    </otv:Difference>
+
+    <!-- Axis of Analysis: Category -->
+
+    <otv:AxisOfAnalysis rdf:about="#Category">
+        <rdfs:label>Category</rdfs:label>
+        <otv:containsDifference rdf:resource="#location"/>
+        <otv:containsDifference rdf:resource="#philosopher"/>
+        <otv:containsDifference rdf:resource="#philosophical_work"/>
+    </otv:AxisOfAnalysis>
+
+    <otv:Difference rdf:about="#location">
+        <rdf:type rdf:resource="http://www.ontologia.fr/OTB/otv#Difference"/>
+        <rdfs:label>location</rdfs:label>
+        <otv:belongsToAxis rdf:resource="#Category"/>
+    </otv:Difference>
+
+    <otv:Difference rdf:about="#philosopher">
+        <rdf:type rdf:resource="http://www.ontologia.fr/OTB/otv#Difference"/>
+        <rdfs:label>philosopher</rdfs:label>
+        <otv:belongsToAxis rdf:resource="#Category"/>
+    </otv:Difference>
+
+    <otv:Difference rdf:about="#philosophical_work">
+        <rdf:type rdf:resource="http://www.ontologia.fr/OTB/otv#Difference"/>
+        <rdfs:label>philosophical work</rdfs:label>
+        <otv:belongsToAxis rdf:resource="#Category"/>
+    </otv:Difference>
+
+	<!--  OTV Relations -->
+
+    <otv:Relation rdf:about="#hasBirthPlace"/>
+    <otv:Relation rdf:about="#hasDeathPlace"/>
+    <otv:Relation rdf:about="#hasFunction"/>
+    <otv:Relation rdf:about="#hasPart"/>
+    <otv:Relation rdf:about="#hasWritten"/>
+    <otv:Relation rdf:about="#isBirthPlaceOf"/>
+    <otv:Relation rdf:about="#isDeathPlaceOf"/>
+    <otv:Relation rdf:about="#isRelatedTo"/>
+    <otv:Relation rdf:about="#isStudentOf"/>
+    <otv:Relation rdf:about="#isTeacherOf"/>
+    <otv:Relation rdf:about="#isWrittenBy"/>
+	<!--  OTV Attributes -->
+
+    <otv:Attribute rdf:about="#bornIn"/>
+    <otv:Attribute rdf:about="#diedIn"/>
+    <otv:Attribute rdf:about="#hasCoordinates"/>
+	<!--  OTV Concepts -->
+
+    <otv:Concept rdf:about="#Ancient_Greek_Philosopher">
+        <otv:conceptName>&lt;Ancient_Greek_Philosopher&gt;</otv:conceptName>
+        <otv:isA rdf:resource="#Philosopher"/>
+        <otv:ownDifference rdf:resource="#ancient_greek"/>
+        <otv:inheritedDifference rdf:resource="#philosopher"/>
+        <otv:difference rdf:resource="#ancient_greek"/>
+        <otv:difference rdf:resource="#philosopher"/>
+        <otv:denotedByTerm rdf:resource="#ancient_greek_philosopher_en"/>
+        <otv:denotedByTerm rdf:resource="#古希腊哲学家_zh"/>
+    </otv:Concept>
+
+    <otv:Concept rdf:about="#Ancient_Chinese_Philosopher">
+        <otv:conceptName>&lt;Ancient_Chinese_Philosopher&gt;</otv:conceptName>
+        <otv:isA rdf:resource="#Philosopher"/>
+        <otv:ownDifference rdf:resource="#ancient_chinese"/>
+        <otv:inheritedDifference rdf:resource="#philosopher"/>
+        <otv:difference rdf:resource="#ancient_chinese"/>
+        <otv:difference rdf:resource="#philosopher"/>
+        <otv:denotedByTerm rdf:resource="#ancient_chinese_philosopher_en"/>
+        <otv:denotedByTerm rdf:resource="#中国古代哲学家_zh"/>
+    </otv:Concept>
+
+    <otv:Concept rdf:about="#Ancient_Greek_Location">
+        <otv:conceptName>&lt;Ancient_Greek_Location&gt;</otv:conceptName>
+        <otv:isA rdf:resource="#Location"/>
+        <otv:ownDifference rdf:resource="#ancient_greek"/>
+        <otv:inheritedDifference rdf:resource="#location"/>
+        <otv:difference rdf:resource="#ancient_greek"/>
+        <otv:difference rdf:resource="#location"/>
+        <otv:denotedByTerm rdf:resource="#ancient_greek_location_en"/>
+        <otv:denotedByTerm rdf:resource="#古希腊地点_zh"/>
+    </otv:Concept>
+
+    <otv:Concept rdf:about="#Ancient_Chinese_Location">
+        <otv:conceptName>&lt;Ancient_Chinese_Location&gt;</otv:conceptName>
+        <otv:isA rdf:resource="#Location"/>
+        <otv:ownDifference rdf:resource="#ancient_chinese"/>
+        <otv:inheritedDifference rdf:resource="#location"/>
+        <otv:difference rdf:resource="#ancient_chinese"/>
+        <otv:difference rdf:resource="#location"/>
+        <otv:denotedByTerm rdf:resource="#ancient_chinese_location_en"/>
+        <otv:denotedByTerm rdf:resource="#古代中国地点_zh"/>
+    </otv:Concept>
+
+    <otv:Concept rdf:about="#Ancient_Chinese_Philosophical_Work">
+        <otv:conceptName>&lt;Ancient_Chinese_Philosophical_Work&gt;</otv:conceptName>
+        <otv:isA rdf:resource="#Philosophical_Work"/>
+        <otv:ownDifference rdf:resource="#ancient_chinese"/>
+        <otv:inheritedDifference rdf:resource="#philosophical_work"/>
+        <otv:difference rdf:resource="#ancient_chinese"/>
+        <otv:difference rdf:resource="#philosophical_work"/>
+        <otv:denotedByTerm rdf:resource="#ancient_chinese_philosophical_work_en"/>
+        <otv:denotedByTerm rdf:resource="#中国古代哲学著作_zh"/>
+    </otv:Concept>
+
+    <otv:Concept rdf:about="#Philosopher">
+        <otv:conceptName>&lt;Philosopher&gt;</otv:conceptName>
+        <otv:ownDifference rdf:resource="#philosopher"/>
+        <otv:difference rdf:resource="#philosopher"/>
+        <otv:denotedByTerm rdf:resource="#philosopher_en"/>
+        <otv:denotedByTerm rdf:resource="#哲学家_zh"/>
+    </otv:Concept>
+
+    <otv:Concept rdf:about="#Location">
+        <otv:conceptName>&lt;Location&gt;</otv:conceptName>
+        <otv:ownDifference rdf:resource="#location"/>
+        <otv:difference rdf:resource="#location"/>
+        <otv:denotedByTerm rdf:resource="#location_en"/>
+        <otv:denotedByTerm rdf:resource="#地点_zh"/>
+    </otv:Concept>
+
+    <otv:Concept rdf:about="#Ancient_Greek_Philosophical_Work">
+        <otv:conceptName>&lt;Ancient_Greek_Philosophical_Work&gt;</otv:conceptName>
+        <otv:isA rdf:resource="#Philosophical_Work"/>
+        <otv:ownDifference rdf:resource="#ancient_greek"/>
+        <otv:inheritedDifference rdf:resource="#philosophical_work"/>
+        <otv:difference rdf:resource="#ancient_greek"/>
+        <otv:difference rdf:resource="#philosophical_work"/>
+        <otv:denotedByTerm rdf:resource="#ancient_greek_philosophical_work_en"/>
+        <otv:denotedByTerm rdf:resource="#古希腊哲学著作_zh"/>
+    </otv:Concept>
+
+    <otv:Concept rdf:about="#Philosophical_Work">
+        <otv:conceptName>&lt;Philosophical_Work&gt;</otv:conceptName>
+        <otv:ownDifference rdf:resource="#philosophical_work"/>
+        <otv:difference rdf:resource="#philosophical_work"/>
+        <otv:denotedByTerm rdf:resource="#philosophical_work_en"/>
+        <otv:denotedByTerm rdf:resource="#哲理工作_zh"/>
+    </otv:Concept>
+
+	<!--  OTV Terms -->
+
+    <otv:Term rdf:about="#ancient_greek_philosophical_work_en">
+        <rdfs:label xml:lang="en">ancient greek philosophical work</rdfs:label>
+        <otv:termName>ancient greek philosophical work</otv:termName>
+        <otv:language>en</otv:language>
+        <otv:denotedConcept rdf:resource="#Ancient_Greek_Philosophical_Work"/>
+        <otv:termStatus>preferred</otv:termStatus>
+        <otv:partOfSpeech>preferred</otv:partOfSpeech>
+        <otv:gender>preferred</otv:gender>
+    </otv:Term>
+
+    <otv:Term rdf:about="#ancient_greek_philosopher_en">
+        <rdfs:label xml:lang="en">ancient greek philosopher</rdfs:label>
+        <otv:termName>ancient greek philosopher</otv:termName>
+        <otv:language>en</otv:language>
+        <otv:denotedConcept rdf:resource="#Ancient_Greek_Philosopher"/>
+        <otv:termStatus>preferred</otv:termStatus>
+        <otv:partOfSpeech>preferred</otv:partOfSpeech>
+        <otv:gender>preferred</otv:gender>
+    </otv:Term>
+
+    <otv:Term rdf:about="#location_en">
+        <rdfs:label xml:lang="en">location</rdfs:label>
+        <otv:termName>location</otv:termName>
+        <otv:language>en</otv:language>
+        <otv:denotedConcept rdf:resource="#Location"/>
+        <otv:termStatus>preferred</otv:termStatus>
+        <otv:partOfSpeech>preferred</otv:partOfSpeech>
+        <otv:gender>preferred</otv:gender>
+    </otv:Term>
+
+    <otv:Term rdf:about="#philosopher_en">
+        <rdfs:label xml:lang="en">philosopher</rdfs:label>
+        <otv:termName>philosopher</otv:termName>
+        <otv:language>en</otv:language>
+        <otv:denotedConcept rdf:resource="#Philosopher"/>
+        <otv:termStatus>preferred</otv:termStatus>
+        <otv:partOfSpeech>preferred</otv:partOfSpeech>
+        <otv:gender>preferred</otv:gender>
+    </otv:Term>
+
+    <otv:Term rdf:about="#philosophical_work_en">
+        <rdfs:label xml:lang="en">philosophical work</rdfs:label>
+        <otv:termName>philosophical work</otv:termName>
+        <otv:language>en</otv:language>
+        <otv:denotedConcept rdf:resource="#Philosophical_Work"/>
+        <otv:termStatus>preferred</otv:termStatus>
+        <otv:partOfSpeech>preferred</otv:partOfSpeech>
+        <otv:gender>preferred</otv:gender>
+    </otv:Term>
+
+    <otv:Term rdf:about="#ancient_greek_location_en">
+        <rdfs:label xml:lang="en">ancient greek location</rdfs:label>
+        <otv:termName>ancient greek location</otv:termName>
+        <otv:language>en</otv:language>
+        <otv:denotedConcept rdf:resource="#Ancient_Greek_Location"/>
+        <otv:termStatus>preferred</otv:termStatus>
+        <otv:partOfSpeech>preferred</otv:partOfSpeech>
+        <otv:gender>preferred</otv:gender>
+    </otv:Term>
+
+    <otv:Term rdf:about="#ancient_chinese_location_en">
+        <rdfs:label xml:lang="en">ancient chinese location</rdfs:label>
+        <otv:termName>ancient chinese location</otv:termName>
+        <otv:language>en</otv:language>
+        <otv:denotedConcept rdf:resource="#Ancient_Chinese_Location"/>
+        <otv:termStatus>preferred</otv:termStatus>
+        <otv:partOfSpeech>preferred</otv:partOfSpeech>
+        <otv:gender>preferred</otv:gender>
+    </otv:Term>
+
+    <otv:Term rdf:about="#ancient_chinese_philosopher_en">
+        <rdfs:label xml:lang="en">ancient chinese philosopher</rdfs:label>
+        <otv:termName>ancient chinese philosopher</otv:termName>
+        <otv:language>en</otv:language>
+        <otv:denotedConcept rdf:resource="#Ancient_Chinese_Philosopher"/>
+        <otv:termStatus>preferred</otv:termStatus>
+        <otv:partOfSpeech>preferred</otv:partOfSpeech>
+        <otv:gender>preferred</otv:gender>
+    </otv:Term>
+
+    <otv:Term rdf:about="#ancient_chinese_philosophical_work_en">
+        <rdfs:label xml:lang="en">ancient chinese philosophical work</rdfs:label>
+        <otv:termName>ancient chinese philosophical work</otv:termName>
+        <otv:language>en</otv:language>
+        <otv:denotedConcept rdf:resource="#Ancient_Chinese_Philosophical_Work"/>
+        <otv:termStatus>preferred</otv:termStatus>
+        <otv:partOfSpeech>preferred</otv:partOfSpeech>
+        <otv:gender>preferred</otv:gender>
+    </otv:Term>
+
+    <otv:Term rdf:about="#中国古代哲学家_zh">
+        <rdfs:label xml:lang="zh">中国古代哲学家</rdfs:label>
+        <otv:termName>中国古代哲学家</otv:termName>
+        <otv:language>zh</otv:language>
+        <otv:denotedConcept rdf:resource="#Ancient_Chinese_Philosopher"/>
+        <otv:termStatus>preferred</otv:termStatus>
+        <otv:partOfSpeech>preferred</otv:partOfSpeech>
+        <otv:gender>preferred</otv:gender>
+    </otv:Term>
+
+    <otv:Term rdf:about="#中国古代哲学著作_zh">
+        <rdfs:label xml:lang="zh">中国古代哲学著作</rdfs:label>
+        <otv:termName>中国古代哲学著作</otv:termName>
+        <otv:language>zh</otv:language>
+        <otv:denotedConcept rdf:resource="#Ancient_Chinese_Philosophical_Work"/>
+        <otv:termStatus>preferred</otv:termStatus>
+        <otv:partOfSpeech>preferred</otv:partOfSpeech>
+        <otv:gender>preferred</otv:gender>
+    </otv:Term>
+
+    <otv:Term rdf:about="#古希腊哲学著作_zh">
+        <rdfs:label xml:lang="zh">古希腊哲学著作</rdfs:label>
+        <otv:termName>古希腊哲学著作</otv:termName>
+        <otv:language>zh</otv:language>
+        <otv:denotedConcept rdf:resource="#Ancient_Greek_Philosophical_Work"/>
+        <otv:termStatus>preferred</otv:termStatus>
+        <otv:partOfSpeech>preferred</otv:partOfSpeech>
+        <otv:gender>preferred</otv:gender>
+    </otv:Term>
+
+    <otv:Term rdf:about="#地点_zh">
+        <rdfs:label xml:lang="zh">地点</rdfs:label>
+        <otv:termName>地点</otv:termName>
+        <otv:language>zh</otv:language>
+        <otv:denotedConcept rdf:resource="#Location"/>
+        <otv:termStatus>preferred</otv:termStatus>
+        <otv:partOfSpeech>preferred</otv:partOfSpeech>
+        <otv:gender>preferred</otv:gender>
+    </otv:Term>
+
+    <otv:Term rdf:about="#古希腊地点_zh">
+        <rdfs:label xml:lang="zh">古希腊地点</rdfs:label>
+        <otv:termName>古希腊地点</otv:termName>
+        <otv:language>zh</otv:language>
+        <otv:denotedConcept rdf:resource="#Ancient_Greek_Location"/>
+        <otv:termStatus>preferred</otv:termStatus>
+        <otv:partOfSpeech>preferred</otv:partOfSpeech>
+        <otv:gender>preferred</otv:gender>
+    </otv:Term>
+
+    <otv:Term rdf:about="#哲理工作_zh">
+        <rdfs:label xml:lang="zh">哲理工作</rdfs:label>
+        <otv:termName>哲理工作</otv:termName>
+        <otv:language>zh</otv:language>
+        <otv:denotedConcept rdf:resource="#Philosophical_Work"/>
+        <otv:termStatus>preferred</otv:termStatus>
+        <otv:partOfSpeech>preferred</otv:partOfSpeech>
+        <otv:gender>preferred</otv:gender>
+    </otv:Term>
+
+    <otv:Term rdf:about="#古代中国地点_zh">
+        <rdfs:label xml:lang="zh">古代中国地点</rdfs:label>
+        <otv:termName>古代中国地点</otv:termName>
+        <otv:language>zh</otv:language>
+        <otv:denotedConcept rdf:resource="#Ancient_Chinese_Location"/>
+        <otv:termStatus>preferred</otv:termStatus>
+        <otv:partOfSpeech>preferred</otv:partOfSpeech>
+        <otv:gender>preferred</otv:gender>
+    </otv:Term>
+
+    <otv:Term rdf:about="#古希腊哲学家_zh">
+        <rdfs:label xml:lang="zh">古希腊哲学家</rdfs:label>
+        <otv:termName>古希腊哲学家</otv:termName>
+        <otv:language>zh</otv:language>
+        <otv:denotedConcept rdf:resource="#Ancient_Greek_Philosopher"/>
+        <otv:termStatus>preferred</otv:termStatus>
+        <otv:partOfSpeech>preferred</otv:partOfSpeech>
+        <otv:gender>preferred</otv:gender>
+    </otv:Term>
+
+    <otv:Term rdf:about="#哲学家_zh">
+        <rdfs:label xml:lang="zh">哲学家</rdfs:label>
+        <otv:termName>哲学家</otv:termName>
+        <otv:language>zh</otv:language>
+        <otv:denotedConcept rdf:resource="#Philosopher"/>
+        <otv:termStatus>preferred</otv:termStatus>
+        <otv:partOfSpeech>preferred</otv:partOfSpeech>
+        <otv:gender>preferred</otv:gender>
+    </otv:Term>
+
+	<!--  OTV Proper Names -->
+
+    <otv:ProperName rdf:about="#Socrates_en">
+        <otv:properName>Socrates</otv:properName>
+        <otv:language>en</otv:language>
+        <otv:denotedObject rdf:resource="#socrates"/>
+    </otv:ProperName>
+
+    <otv:ProperName rdf:about="#Confucius_en">
+        <otv:properName>Confucius</otv:properName>
+        <otv:language>en</otv:language>
+        <otv:denotedObject rdf:resource="#confucius"/>
+    </otv:ProperName>
+
+    <otv:ProperName rdf:about="#Analects_en">
+        <otv:properName>Analects</otv:properName>
+        <otv:language>en</otv:language>
+        <otv:denotedObject rdf:resource="#analects"/>
+    </otv:ProperName>
+
+    <otv:ProperName rdf:about="#Plato_en">
+        <otv:properName>Plato</otv:properName>
+        <otv:language>en</otv:language>
+        <otv:denotedObject rdf:resource="#plato"/>
+    </otv:ProperName>
+
+    <otv:ProperName rdf:about="#Chalcis_en">
+        <otv:properName>Chalcis</otv:properName>
+        <otv:language>en</otv:language>
+        <otv:denotedObject rdf:resource="#chalcis"/>
+    </otv:ProperName>
+
+    <otv:ProperName rdf:about="#Aristotle_en">
+        <otv:properName>Aristotle</otv:properName>
+        <otv:language>en</otv:language>
+        <otv:denotedObject rdf:resource="#aristotle"/>
+    </otv:ProperName>
+
+    <otv:ProperName rdf:about="#Metaphysics_en">
+        <otv:properName>Metaphysics</otv:properName>
+        <otv:language>en</otv:language>
+        <otv:denotedObject rdf:resource="#metaphysics"/>
+    </otv:ProperName>
+
+    <otv:ProperName rdf:about="#Stageira_en">
+        <otv:properName>Stageira</otv:properName>
+        <otv:language>en</otv:language>
+        <otv:denotedObject rdf:resource="#stageira"/>
+    </otv:ProperName>
+
+    <otv:ProperName rdf:about="#Spring_and_Autumn_Annals_en">
+        <otv:properName>Spring and Autumn Annals</otv:properName>
+        <otv:language>en</otv:language>
+        <otv:denotedObject rdf:resource="#spring_and_autumn_annals"/>
+    </otv:ProperName>
+
+    <otv:ProperName rdf:about="#Dong_Zhongshu_en">
+        <otv:properName>Dong Zhongshu</otv:properName>
+        <otv:language>en</otv:language>
+        <otv:denotedObject rdf:resource="#dong_zhongshu"/>
+    </otv:ProperName>
+
+    <otv:ProperName rdf:about="#Guangchuan_en">
+        <otv:properName>Guangchuan</otv:properName>
+        <otv:language>en</otv:language>
+        <otv:denotedObject rdf:resource="#guangchuan"/>
+    </otv:ProperName>
+
+    <otv:ProperName rdf:about="#Republic_en">
+        <otv:properName>Republic</otv:properName>
+        <otv:language>en</otv:language>
+        <otv:denotedObject rdf:resource="#republic"/>
+    </otv:ProperName>
+
+    <otv:ProperName rdf:about="#Qufu_en">
+        <otv:properName>Qufu</otv:properName>
+        <otv:language>en</otv:language>
+        <otv:denotedObject rdf:resource="#qufu"/>
+    </otv:ProperName>
+
+    <otv:ProperName rdf:about="#Athens_en">
+        <otv:properName>Athens</otv:properName>
+        <otv:language>en</otv:language>
+        <otv:denotedObject rdf:resource="#athens"/>
+    </otv:ProperName>
+
+    <otv:ProperName rdf:about="#Theophrastus_en">
+        <otv:properName>Theophrastus</otv:properName>
+        <otv:language>en</otv:language>
+        <otv:denotedObject rdf:resource="#theophrastus"/>
+    </otv:ProperName>
+
+    <otv:ProperName rdf:about="#孔子_zh">
+        <otv:properName>孔子</otv:properName>
+        <otv:language>zh</otv:language>
+        <otv:denotedObject rdf:resource="#confucius"/>
+    </otv:ProperName>
+
+    <otv:ProperName rdf:about="#形而上学_zh">
+        <otv:properName>形而上学</otv:properName>
+        <otv:language>zh</otv:language>
+        <otv:denotedObject rdf:resource="#metaphysics"/>
+    </otv:ProperName>
+
+    <otv:ProperName rdf:about="#论语_zh">
+        <otv:properName>论语</otv:properName>
+        <otv:language>zh</otv:language>
+        <otv:denotedObject rdf:resource="#analects"/>
+    </otv:ProperName>
+
+    <otv:ProperName rdf:about="#斯塔基拉_zh">
+        <otv:properName>斯塔基拉</otv:properName>
+        <otv:language>zh</otv:language>
+        <otv:denotedObject rdf:resource="#stageira"/>
+    </otv:ProperName>
+
+    <otv:ProperName rdf:about="#亚里士多德_zh">
+        <otv:properName>亚里士多德</otv:properName>
+        <otv:language>zh</otv:language>
+        <otv:denotedObject rdf:resource="#aristotle"/>
+    </otv:ProperName>
+
+    <otv:ProperName rdf:about="#赛奥法拉斯托斯_zh">
+        <otv:properName>赛奥法拉斯托斯</otv:properName>
+        <otv:language>zh</otv:language>
+        <otv:denotedObject rdf:resource="#theophrastus"/>
+    </otv:ProperName>
+
+    <otv:ProperName rdf:about="#卡尔基斯_zh">
+        <otv:properName>卡尔基斯</otv:properName>
+        <otv:language>zh</otv:language>
+        <otv:denotedObject rdf:resource="#chalcis"/>
+    </otv:ProperName>
+
+    <otv:ProperName rdf:about="#春秋_zh">
+        <otv:properName>春秋</otv:properName>
+        <otv:language>zh</otv:language>
+        <otv:denotedObject rdf:resource="#spring_and_autumn_annals"/>
+    </otv:ProperName>
+
+    <otv:ProperName rdf:about="#柏拉图_zh">
+        <otv:properName>柏拉图</otv:properName>
+        <otv:language>zh</otv:language>
+        <otv:denotedObject rdf:resource="#plato"/>
+    </otv:ProperName>
+
+    <otv:ProperName rdf:about="#理想国_zh">
+        <otv:properName>理想国</otv:properName>
+        <otv:language>zh</otv:language>
+        <otv:denotedObject rdf:resource="#republic"/>
+    </otv:ProperName>
+
+    <otv:ProperName rdf:about="#董仲舒_zh">
+        <otv:properName>董仲舒</otv:properName>
+        <otv:language>zh</otv:language>
+        <otv:denotedObject rdf:resource="#dong_zhongshu"/>
+    </otv:ProperName>
+
+    <otv:ProperName rdf:about="#雅典_zh">
+        <otv:properName>雅典</otv:properName>
+        <otv:language>zh</otv:language>
+        <otv:denotedObject rdf:resource="#athens"/>
+    </otv:ProperName>
+
+    <otv:ProperName rdf:about="#邻近齐鲁_zh">
+        <otv:properName>邻近齐鲁</otv:properName>
+        <otv:language>zh</otv:language>
+        <otv:denotedObject rdf:resource="#guangchuan"/>
+    </otv:ProperName>
+
+    <otv:ProperName rdf:about="#苏格拉底_zh">
+        <otv:properName>苏格拉底</otv:properName>
+        <otv:language>zh</otv:language>
+        <otv:denotedObject rdf:resource="#socrates"/>
+    </otv:ProperName>
+
+    <otv:ProperName rdf:about="#曲阜_zh">
+        <otv:properName>曲阜</otv:properName>
+        <otv:language>zh</otv:language>
+        <otv:denotedObject rdf:resource="#qufu"/>
+    </otv:ProperName>
+
+	<!--  OTV Individuals -->
+
+    <otv:Object rdf:about="#spring_and_autumn_annals">
+        <otv:instanceOf rdf:resource="#Ancient_Chinese_Philosophical_Work"/>
+        <otv:denotedByProperName rdf:resource="#Spring_and_Autumn_Annals_en"/>
+        <otv:denotedByProperName rdf:resource="#春秋_zh"/>
+    </otv:Object>
+
+    <otv:Object rdf:about="#qufu">
+        <otv:instanceOf rdf:resource="#Ancient_Chinese_Location"/>
+        <otv:denotedByProperName rdf:resource="#Qufu_en"/>
+        <otv:denotedByProperName rdf:resource="#曲阜_zh"/>
+    </otv:Object>
+
+    <otv:Object rdf:about="#stageira">
+        <otv:instanceOf rdf:resource="#Ancient_Greek_Location"/>
+        <otv:denotedByProperName rdf:resource="#Stageira_en"/>
+        <otv:denotedByProperName rdf:resource="#斯塔基拉_zh"/>
+    </otv:Object>
+
+    <otv:Object rdf:about="#guangchuan">
+        <otv:instanceOf rdf:resource="#Ancient_Chinese_Location"/>
+        <otv:denotedByProperName rdf:resource="#Guangchuan_en"/>
+        <otv:denotedByProperName rdf:resource="#邻近齐鲁_zh"/>
+    </otv:Object>
+
+    <otv:Object rdf:about="#republic">
+        <otv:instanceOf rdf:resource="#Ancient_Greek_Philosophical_Work"/>
+        <otv:denotedByProperName rdf:resource="#Republic_en"/>
+        <otv:denotedByProperName rdf:resource="#理想国_zh"/>
+    </otv:Object>
+
+    <otv:Object rdf:about="#theophrastus">
+        <otv:instanceOf rdf:resource="#Ancient_Greek_Philosopher"/>
+        <otv:denotedByProperName rdf:resource="#Theophrastus_en"/>
+        <otv:denotedByProperName rdf:resource="#赛奥法拉斯托斯_zh"/>
+    </otv:Object>
+
+    <otv:Object rdf:about="#dong_zhongshu">
+        <otv:instanceOf rdf:resource="#Ancient_Chinese_Philosopher"/>
+        <otv:denotedByProperName rdf:resource="#Dong_Zhongshu_en"/>
+        <otv:denotedByProperName rdf:resource="#董仲舒_zh"/>
+    </otv:Object>
+
+    <otv:Object rdf:about="#plato">
+        <otv:instanceOf rdf:resource="#Ancient_Greek_Philosopher"/>
+        <otv:denotedByProperName rdf:resource="#Plato_en"/>
+        <otv:denotedByProperName rdf:resource="#柏拉图_zh"/>
+    </otv:Object>
+
+    <otv:Object rdf:about="#aristotle">
+        <otv:instanceOf rdf:resource="#Ancient_Greek_Philosopher"/>
+        <otv:denotedByProperName rdf:resource="#Aristotle_en"/>
+        <otv:denotedByProperName rdf:resource="#亚里士多德_zh"/>
+    </otv:Object>
+
+    <otv:Object rdf:about="#athens">
+        <otv:instanceOf rdf:resource="#Ancient_Greek_Location"/>
+        <otv:denotedByProperName rdf:resource="#Athens_en"/>
+        <otv:denotedByProperName rdf:resource="#雅典_zh"/>
+    </otv:Object>
+
+    <otv:Object rdf:about="#metaphysics">
+        <otv:instanceOf rdf:resource="#Ancient_Greek_Philosophical_Work"/>
+        <otv:denotedByProperName rdf:resource="#Metaphysics_en"/>
+        <otv:denotedByProperName rdf:resource="#形而上学_zh"/>
+    </otv:Object>
+
+    <otv:Object rdf:about="#chalcis">
+        <otv:instanceOf rdf:resource="#Ancient_Greek_Location"/>
+        <otv:denotedByProperName rdf:resource="#Chalcis_en"/>
+        <otv:denotedByProperName rdf:resource="#卡尔基斯_zh"/>
+    </otv:Object>
+
+    <otv:Object rdf:about="#confucius">
+        <otv:instanceOf rdf:resource="#Ancient_Chinese_Philosopher"/>
+        <otv:denotedByProperName rdf:resource="#Confucius_en"/>
+        <otv:denotedByProperName rdf:resource="#孔子_zh"/>
+    </otv:Object>
+
+    <otv:Object rdf:about="#socrates">
+        <otv:instanceOf rdf:resource="#Ancient_Greek_Philosopher"/>
+        <otv:denotedByProperName rdf:resource="#Socrates_en"/>
+        <otv:denotedByProperName rdf:resource="#苏格拉底_zh"/>
+    </otv:Object>
+
+    <otv:Object rdf:about="#analects">
+        <otv:instanceOf rdf:resource="#Ancient_Chinese_Philosophical_Work"/>
+        <otv:denotedByProperName rdf:resource="#Analects_en"/>
+        <otv:denotedByProperName rdf:resource="#论语_zh"/>
+    </otv:Object>
+
+</rdf:RDF>
